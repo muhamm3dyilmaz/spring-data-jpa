@@ -15,7 +15,7 @@ public class SpringDataJpaApplication {
 
 		StudentRepository repository = context.getBean(StudentRepository.class);
 
-		//! --> FOR INSERTING DATA
+		// ! --> FOR INSERTING DATA
 		// Student s1 = context.getBean(Student.class);
 		// Student s2 = context.getBean(Student.class);
 		// Student s3 = context.getBean(Student.class);
@@ -36,8 +36,11 @@ public class SpringDataJpaApplication {
 		// repository.save(s2);
 		// repository.save(s3);
 
-		//! --> FOR FETCHING DATA
-		System.out.println(repository.findAll());
+		// ! --> FOR FETCHING ALL DATA
+		// System.out.println(repository.findAll());
+
+		// ! --> FOR FETCHING DATA BY ID
+		System.out.println(repository.findById(101));
 
 	}
 
