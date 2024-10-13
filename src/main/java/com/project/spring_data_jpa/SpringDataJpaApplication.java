@@ -40,7 +40,13 @@ public class SpringDataJpaApplication {
 		// System.out.println(repository.findAll());
 
 		// ! --> FOR FETCHING DATA BY ID
-		System.out.println(repository.findById(101));
+		// System.out.println(repository.findById(101));
+
+		// ! --> FOR FETCHING DATA BY NAME
+		// System.out.println(repository.findByName("Muhammed"));
+
+		// ! --> FOR FETCHING DATA BY MARK
+		System.out.println(repository.findByMark(86));
 
 	}
 
