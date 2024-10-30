@@ -46,8 +46,13 @@ public class SpringDataJpaApplication {
 		// System.out.println(repository.findByName("Muhammed"));
 
 		// ! --> FOR FETCHING DATA BY MARK
-		System.out.println(repository.findByMark(86));
+		// System.out.println(repository.findByMark(86));
 
+		// ! --> FOR UPDATING DATA
+		// repository.save(s3);
+
+		// ! --> FOR DELETING DATA
+		// repository.delete(s3);
 	}
 
 }
